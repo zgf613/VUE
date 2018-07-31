@@ -26,10 +26,10 @@
       }                                                              <br>
     }                                                                <br>
 
-    export default {                                                 <br> 
-      install: function (vm) {                                       <br>
-        vm.prototype.$local = local                                  <br>
-      }                                                              <br>
-    }                                                                <br>
-  }                                                                  <br>
+    export default {                                                 
+      install: function (vm) {                                       
+        vm.prototype.$local = local                                 
+      }                                                              
+    }                                                                
+  }                                                                  
 
