@@ -17,19 +17,19 @@
   
   ### 登录退出的状态，是用的localStorage来存储
 
-  let local = { \</br>
-      save (key, value) { \</br>
-        localStorage.setItem(key, JSON.stringify(value)) \</br>
-      },  \</br>
-      fetch (key) {                                          \</br>
-        return JSON.parse(localStorage.getItem(key)) || {} \</br>
-      } \</br>
-    }   \</br>
+  let local = {                                                      \<br>
+      save (key, value) {                                            \<br>
+        localStorage.setItem(key, JSON.stringify(value))             \<br>
+      },                                                             \<br>
+      fetch (key) {                                                  \<br>
+        return JSON.parse(localStorage.getItem(key)) || {}           \<br>
+      }                                                              \<br>
+    }                                                                \<br>
 
-    export default { \</br> 
-      install: function (vm) {  \</br>
-        vm.prototype.$local = local  \</br>
-      }   \</br>
-    }     \</br>
-  }       \</br>
+    export default {                                                 \<br> 
+      install: function (vm) {                                       \<br>
+        vm.prototype.$local = local                                  \<br>
+      }                                                              \<br>
+    }                                                                \<br>
+  }                                                                  \<br>
 
